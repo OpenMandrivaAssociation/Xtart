@@ -1,6 +1,6 @@
 %define	name	Xtart
 %define	version	1.0
-%define	release	9mdk
+%define	release	%mkrel 10
 
 Summary:	Use this to access any installed WM from a logged-in console
 Name:		%{name}
