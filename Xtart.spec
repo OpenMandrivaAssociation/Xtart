@@ -1,13 +1,15 @@
 %define	name	Xtart
 %define	version	1.0
-%define	release	%mkrel 10
+%define	release	%mkrel 11
 
 Summary:	Use this to access any installed WM from a logged-in console
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
-Patch0:		%{name}-xvt.patch.bz2
+Patch0:		%{name}-xvt.patch
+# call startx instead of xinit, for ConsoleKit
+Patch1:		%{name}-startx.patch
 License:	GPL
 Group:		Graphical desktop/Other
 BuildRoot:	%{_tmppath}/%{name}-buildroot
@@ -23,7 +25,8 @@ window manager.  See /etc/X11/wmsession.d for proper WM integration.
 
 %prep
 %setup -q
-%patch0 -p0 -b .peroyvind
+%patch0 -p0 -b .xvt
+%patch1 -p0 -b .startx
 
 %build
 
