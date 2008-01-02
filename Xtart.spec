@@ -12,6 +12,7 @@ Patch0:		%{name}-xvt.patch
 Patch1:		%{name}-startx.patch
 License:	GPL
 Group:		Graphical desktop/Other
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	python
 BuildArch:	noarch
 
