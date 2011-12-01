@@ -31,10 +31,10 @@ window manager.  See /etc/X11/wmsession.d for proper WM integration.
 %build
 
 %install
-%{__install} -m 0755 %{name} -D $RPM_BUILD_ROOT%{_bindir}/%{name}
+%{__install} -m 0755 %{name} -D %{buildroot}%{_bindir}/%{name}
 
 %clean
-%{__rm} -rf $RPM_BUILD_ROOT
+%{__rm} -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
