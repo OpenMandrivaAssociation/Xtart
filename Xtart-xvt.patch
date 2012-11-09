@@ -1,0 +1,11 @@
+--- Xtart.orig	2003-06-06 03:24:54.000000000 +0200
++++ Xtart	2003-06-06 03:25:48.000000000 +0200
+@@ -55,7 +55,7 @@ if s == '0':
+     sys.stdin.flush()
+     s=raw_input('Type another 0 to confirm')
+     if s == '0':
+-        os.execvp('xinit',('xinit','/usr/X11R6/bin/xterm'))
++        os.execvp('xinit',('xinit','/usr/bin/xvt'))
+ if len(s)==0:
+     s='1'
+     selct=1

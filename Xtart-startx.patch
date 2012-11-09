@@ -1,0 +1,11 @@
+--- Xtart~	2001-07-07 21:19:45.000000000 -0400
++++ Xtart	2007-08-21 13:19:57.000000000 -0400
+@@ -72,7 +72,7 @@
+ well=int(s)
+ wellformed=Sessions.has_key(well)
+ if wellformed:
+-    os.execvp('xinit',Sessions[well])
++    os.execvp('startx',Sessions[well])
+ else:
+     print
+     print 'All that work and you mistyped the number'
