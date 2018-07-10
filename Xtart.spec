@@ -1,6 +1,6 @@
 %define	name	Xtart
 %define	version	1.0
-%define release	28
+%define release	29
 
 Summary:	Use this to access any installed WM from a logged-in console
 Name:		%{name}
@@ -80,14 +80,14 @@ window manager.  See /etc/X11/wmsession.d for proper WM integration.
 
 
 
-* Fri Jun 06 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 1.0-9mdk
+* Fri Jun 06 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 1.0-9mdk
 - remove redundant requires, common-licenses is required by the base system
 - from andre <avblokland@gmx.net>:
 	"Xtart assumes that xterm is installed on a Mandrake installation which doesn't 
 	have to be true. But xvt is always installed (atleast if a term is installed)"
 	- use xvt in stead of xterm
 
-* Thu Jun 05 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 1.0-8mdk
+* Thu Jun 05 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 1.0-8mdk
 - cleanup, fix so that we don't end up with unpackaged files
 - macroize
 - drop Source1, it's just a copy of the GPL-license, and it does'nt
@@ -102,7 +102,7 @@ window manager.  See /etc/X11/wmsession.d for proper WM integration.
 - removed useless documentation.
 
 * Thu Oct 18 2001 Daouda LO <daouda@mandrakesoft.com> 1.0-5mdk
-- rpmlint happier. Rank n°1.
+- rpmlint happier. Rank nÂ°1.
 
 * Thu Sep 5 2001 civileme <civileme@manddrakesoft.com> 1.0-4mdk
 -Revised group and corrected versioning
