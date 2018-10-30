@@ -1,6 +1,6 @@
 %define	name	Xtart
 %define	version	1.0
-%define release	29
+%define release	30
 
 Summary:	Use this to access any installed WM from a logged-in console
 Name:		%{name}
